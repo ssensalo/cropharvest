@@ -8,6 +8,3 @@ requires = [
     "wheel"
 ]
 build-backend = "setuptools.build_meta"
-
-[pytest]
-addopts = --ignore=tests/eo/test_eo.py
