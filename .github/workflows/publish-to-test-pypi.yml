@@ -1,12 +1,12 @@
 name: Publish to TestPyPI
 
-on: 
+on:
   workflow_dispatch
 
 jobs:
   build-n-publish:
     name: Publish to TestPyPI
-    runs-on: ubuntu-18.04
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@master
       - name: Set up Python 3.9
