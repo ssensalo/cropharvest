@@ -346,7 +346,7 @@ class EarthEngineExporter:
     def _labels_to_polygons_and_years(
         cls, labels: geopandas.GeoDataFrame, surrounding_metres: int
     ) -> List[Tuple[ee.Geometry, str, date, date]]:
-        output: List[ee.Geometry] = []
+        output: List[Tuple[ee.Geometry, str, date, date]] = []
 
         print(f"Exporting {len(labels)} labels")
 
